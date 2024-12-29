@@ -448,3 +448,11 @@ footer
 h6{
   color: #ED565F !important;
 }
+.text-reset
+{
+  text-decoration: none !important;
+}
+.text-reset:hover
+{
+  color: #ED565F !important;
+}
