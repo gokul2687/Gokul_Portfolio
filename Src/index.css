@@ -1,0 +1,450 @@
+body
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* nav bar style */
+.custom-toggler.navbar-toggler
+{
+    
+    border-color: white;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* SVG image for the white hamburger lines */
+}
+a.nav-link:hover 
+{
+    color: #ED565F !important;
+    text-decoration: underline;
+}
+/* home page style */
+#Home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-attachment: fixed;
+  background-color: black; /* Dark background for contrast */
+  color: white; /* White text */
+}
+
+/* Name Highlight Style */
+#name {
+  color: #ED565F; /* Highlight color */
+  font-weight: bold;
+}
+
+/* Button Styles */
+#home-content button, #btn {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#home-content button:hover, #btn:hover {
+  background-color: #ff3b3b;
+  color: black;
+}
+
+/* Typewriter Effect */
+#typewriter {
+  border-right: 2px solid #ED565F; /* Cursor color and thickness */
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden; /* Ensure text stays within the container */
+  vertical-align: bottom; /* Align cursor to text baseline */
+  color: #ED565F; /* Text color */
+  animation: typing 2s steps(22, end) forwards, blink 0.7s step-end infinite;
+}
+
+/* Text Container */
+#typing-text {
+  display: inline-block; /* Ensure inline alignment with the typewriter cursor */
+  vertical-align: middle; /* Align text and cursor properly */
+  line-height: 1.5; /* Adjust line height for better alignment */
+  font-size: 1.5rem; /* Default font size */
+  font-family: Arial, sans-serif; /* Default font */
+}
+
+/* Animations */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from { border-color: transparent; }
+  to { border-color: #ED565F; }
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+  #typing-text {
+    font-size: 1.2rem; /* Smaller font size for medium screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #typing-text {
+    font-size: 1rem; /* Even smaller font size for small screens */
+  }
+}
+
+/* Cursor Blink Animation */
+@keyframes blink {
+  50% {
+      border-color: transparent; /* Makes the cursor invisible for the blink effect */
+  }
+}
+
+/* CV Download Button */
+#btn1 {
+  color: #ED565F;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid #ED565F;
+  background-color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#btn1:hover {
+  background-color: #ED565F;
+  color: black;
+}
+
+/* About  style */
+#About-page
+{
+  padding: 40px 20px;
+  min-height: 70vh;
+  background-color: black;
+  color: white;
+}
+#about-heading {
+  font-size: 36px;
+  color: #ff5252; /* Accent color */
+  
+}
+#about-content ul {
+  list-style: none;
+  padding: 0;
+}
+#about-content ul li {
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+#image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  #about-content ul li {
+    font-size: 16px;
+  }
+}
+@media (min-width: 992px) {
+  #about-content ul li
+  {
+    margin-right: 100px;
+  }
+  #image-section img
+  {
+    margin-left: 100px;
+  }
+}
+/* education part */
+#education
+{
+  min-height: 100vh;
+  background-color: black;
+}
+
+#education {
+  padding: 20px;
+}
+
+#eduhead {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #ED565F;
+}
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 700px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #ed565f;
+  transform: translateX(-50%);
+}
+
+.container {
+  padding: 20px 20px;
+  position: relative;
+  width: 50%;
+}
+
+.container.left {
+  right: 50%;
+}
+
+.container.right {
+  left: 50%;
+}
+
+.container .content {
+  background-color: #ed565f;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+  .container.left .content {
+    margin-right: auto;
+    margin-left: 10%;
+  } 
+
+.container.right .content {
+    margin-left: auto;
+    margin-right: 10%;
+  }
+
+.tag h2, .tag h3 {
+  margin: 0;
+}
+
+.decs p {
+  margin: 10px 0 0;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ED565F;
+  border-radius: 50%;
+  top: 20px;
+  z-index: 1;
+}
+
+.container.left::after {
+  right :-10px;
+}
+
+.container.right::after {
+  left: -10px;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+
+  .container.left, .container.right {
+    left: 0;
+  }
+
+  .container.left .content, .container.right .content {
+    margin: 0 0 20px 40px;
+  }
+
+  .container.left::after, .container.right::after {
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timeline::before {
+    left: 10px;
+  }
+
+  .container {
+    padding-left: 20px;
+  }
+
+  .container.left .content, .container.right .content {
+    margin: 0 0 20px 20px;
+  }
+
+  .container.left::after, .container.right::after {
+    left: 0;
+  }
+}
+
+/* Skills  */
+#skills {
+  min-height: 100vh;
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#skillhead {
+  text-align: center;
+  color: #ED565F;
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+.skillsub {
+  color: #ED565F;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skillrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.soft, .hard {
+  border: 2px solid #ED565F;
+  border-radius: 8px;
+  padding: 15px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.soft h5, .hard h5 {
+  color: #ED565F;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.skillimg{
+  max-width: 50px;
+  max-height: 50px;
+  margin-bottom: 10px;
+}
+
+/* project section styles */
+
+#projectsection
+{
+  min-height: 100vh;
+  background-color: black;
+}
+#projecthead
+{
+  color: #ED565F;
+  text-align: center;
+  padding-top: 50px;
+}
+#projectsection {
+  padding: 20px;
+}
+
+#projecthead {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  margin: 20px auto;
+  max-width: 90%;
+  border: none;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+  .bg-custom-dark {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    
+  }
+
+.card-title
+{
+  color: #ed565f !important;
+}
+
+.card img {
+  border-radius: 10px;
+}
+
+.btn{
+  background-color: #ed565f !important; /* Button color */
+  border-color: #ED565F !important;
+}
+
+.btn:hover {
+  background-color: #d04c52 !important; /* Slightly darker on hover */
+}
+
+@media screen and (max-width: 576px) {
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+/* contact style */
+
+#contact
+{
+  min-height: 60vh;
+  background-color: black;
+  color: white;
+
+}
+#contacthead
+{
+  color: #ED565F;
+}
+footer
+{
+  margin-top: -100px;
+}
+h6{
+  color: #ED565F !important;
+}
